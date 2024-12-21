@@ -369,7 +369,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await save_user_info(user_id, username)
 
     current_time = time.time()
-    cooldown_time = 600  # Cooldown period in seconds (10 minutes)
+    cooldown_time = 300  # Cooldown period in seconds (10 minutes)
 
     # Check if an attack is already in progress
     if active_attack or user_processes:
